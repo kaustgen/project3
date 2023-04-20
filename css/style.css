@@ -378,12 +378,8 @@ img:hover{
 }
 
 /*CSS for Map*/
-#map-wrapper {
-  padding: 1rem 1rem;
-  margin: auto;
-  width: 50%;
-}
 #map {
+  padding: 1rem 1rem;
   height: 30%;
   width: 35%;
 }
