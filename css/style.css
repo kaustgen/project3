@@ -379,6 +379,5 @@ img:hover{
 
 /*CSS for Map*/
 #map {
-  height: 500px;
-  width: 500px;
+  height: 100%;
 }
