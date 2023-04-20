@@ -6,7 +6,7 @@
 } 
 
 /*header for all pages css*/
-.blue {
+body {
   background-color: dodgerblue;
 }
 .header-border{
@@ -378,5 +378,4 @@ img:hover{
 /*CSS for Map*/
 #map {
   height: 100%;
-  width: 100%;
 }
