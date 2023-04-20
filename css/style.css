@@ -395,7 +395,56 @@ img:hover{
 }
 
 /*slideshow css*/
-#slideImage{
-  width: 400px;
-  height: 400px;
+.image-sliderfade 
+{
+  display: none;
+} 
+.slideshowContainer 
+{
+  min-width: 200px;
+  position: relative;
+  margin: auto;
+} 
+/* The dots/bullets/indicators */
+.dot 
+{
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: transparent;
+  border-color: #ddd;
+  border-width: 5 px;
+  border-style: solid;
+  border-radius: 50%;
+  display: inline-block;
+  transition: border-color 0.6s ease;
+}
+  
+.active 
+{
+  border-color: #666;
+}
+  
+/*animation*/
+.fade 
+{
+  -webkit-animation-name: fade-image;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade-image;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade-image
+{
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@keyframes fade-image
+{
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+/* On smaller screens, decrease text size */
+@media only screen and (min-width: 200px) 
+{
+  .text {font-size: 11px}
 }

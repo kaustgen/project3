@@ -1,25 +1,34 @@
-// Start
-var i = 0;
-var images = [];
-var time = 2000;
 
-// Image List
-images[0] = 'images/image1.jpg';
-images[1] = 'images/image2.jpg';
-images[2] = 'images/image3.jpg';
-images[3] - 'images/image4.jpg';
-
-function changeImg() {
-  document.hasChildNodes.src = images[i];
-
-  if(i < images.length - 1){
-    i++;
-  }
-  else {
-    i = 0;
-  }
-
-  setTimeout("changeImg()", time);
+var slideIndex = 0;
+showSlides(); // call showslide method
+function showSlides()
+{
+    var i;
+    // get the array of divs' with classname image-sliderfade
+    var slides = document.getElementsByClassName("image-sliderfade"); 
+    // get the array of divs' with classname dot
+    var dots = document.getElementsByClassName("dot"); 
+    for (i = 0; i < slides.length; i++) {
+        // initially set the display to 
+        // none for every image.
+        slides[i].style.display = "none"; 
+    }
+     // increase by 1, Global variable
+    slideIndex++; 
+     // chec for boundary
+    if (slideIndex > slides.length) 
+    {
+        slideIndex = 1;
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.
+        replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+  
+    // Change image every 2 seconds
+    setTimeout(showSlides, 2000); 
 }
 
-window.onload = changeImg;
+
