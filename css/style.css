@@ -393,3 +393,9 @@ img:hover{
   height: 750px;
   width: 100%;
 }
+
+/*slideshow css*/
+#slideImage{
+  width: 400px;
+  height: 400px;
+}
