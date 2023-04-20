@@ -5,6 +5,7 @@ function initMap() {
   map = new google.maps.Map(document.getElementById("map"), {
     center: garden,
     zoom: 8,
+    mapId: "9818a76589c36beb",
   });
 
   let marker = new google.maps.Marker({
