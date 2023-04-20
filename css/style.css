@@ -398,7 +398,8 @@ img:hover{
 #slideshow {
   margin: 20px;
   padding: 20px 20px;
-  box-sizing: border-box;
+  position: relative;
+  box-sizing: 100% 100%;
 }
 #slideshow-section{
   position: relative;
