@@ -6,4 +6,6 @@ function initMap() {
     center: garden,
     zoom: 8,
   });
+
+initMap();
 }
