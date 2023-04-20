@@ -413,6 +413,7 @@ img:hover{
   position: relative;
   top: 0;
   left: 0;
+  padding: 15px 15px;
   width: 25%;
   height: 25%;
   display: inline-block;
