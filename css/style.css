@@ -395,3 +395,16 @@ img:hover{
 }
 
 /*slideshow css*/
+#slideshow {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#slideshow-section{
+  position: relative;
+  width: 50%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
