@@ -405,8 +405,8 @@ img:hover{
   position: relative;
   width: 100%;
   height: 50%;
-  display: flex;
-  justify-content: center;
+  display: inline-block;
+  text-align: center;
   align-items: center;
 }
 #slider{
@@ -416,6 +416,9 @@ img:hover{
   padding: 25% 25%;
   width: 100%;
   height: 50%;
+  display: inline-block;
+  text-align: center;
+  align-items: center;
 }
 #navigation{
   position: relative;
@@ -423,8 +426,8 @@ img:hover{
   left: 50%;
   transform: translateX(-50%);
   z-index: 100;
-  display: flex;
-  justify-content: center;
+  display: inline-block;
+  text-align: center;
   align-items: center;
 }
 
