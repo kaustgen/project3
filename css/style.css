@@ -1,0 +1,376 @@
+/*Class to allign*/
+.align-center{
+  margin: 1rem;
+  padding: 1rem 1rem;
+  text-align: center;
+} 
+
+/*header for all pages css*/
+body {
+  background-color: dodgerblue;
+}
+.header-border{
+  width:100%;
+  border: 0.5em black;
+  border-style: solid;
+  margin: 0 0;
+  padding: 1em;
+  background: aqua;
+  position: relative;
+}
+
+.header-border h1{
+  overflow: hidden;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font: bold;
+  text-align: center;
+}
+
+/*Universal img animation*/
+img {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+img:hover{
+  animation-name: img-bounce;
+}
+
+@keyframes img-bounce{
+  0%, 100%, 20%, 50%, 80% {
+		-webkit-transform: translateY(0);
+		-ms-transform:     translateY(0);
+		transform:         translateY(0)
+	}
+	40% {
+		-webkit-transform: translateY(-30px);
+		-ms-transform:     translateY(-30px);
+		transform:         translateY(-30px)
+	}
+	60% {
+		-webkit-transform: translateY(-15px);
+		-ms-transform:     translateY(-15px);
+		transform:         translateY(-15px)
+	}
+}
+/*navbar css*/
+.main-navbar{
+  background-color: lightblue;
+  overflow: hidden;
+}
+
+.navbar-container{
+  float: left;
+  width: 100%;
+  border-bottom: 2px solid black;
+}
+
+.main-navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  left: 50%;
+  float: left;
+}
+
+.main-navbar ul li{
+  float: left;
+  position: relative;
+  right: 50%;
+}
+
+.main-navbar ul li a{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5em;
+  color: navy;
+  margin: 0 -.25rem;
+  padding: 1.25rem 2.188rem;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  text-decoration: none;
+}
+
+.main-navbar ul li a:hover{
+  text-decoration: none;
+  box-shadow: inset 10.938rem 0 0 0 deepskyblue;
+  color: white;
+}
+
+/*Css index page*/
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+#index-title h2{
+  margin-top: 5em;
+  font-family: "Luckiest Guy", cursive;
+  text-align: center;
+}
+
+#index-title h2 span{
+  position: relative;
+  top: 20px;
+  font-size: 80px;
+  color: white;
+  text-shadow: 0 1px 0 grey, 0 2px 0 grey, 0 3px 0 grey, 
+  0 4px 0 grey, 0 5px 0 grey, 0 6px 0 transparent, 0 7px 0 transparent, 
+  0 8px 0 transparent, 0 9px 0 transparent, 0 10px 10px rgb(0, 0, 0, 0.4);
+  animation: bounce 0.3s infinite alternate;
+}
+
+@keyframes bounce{
+  100% {
+    top: -20px;
+    text-shadow: 0 1px 0 grey, 0 2px 0 grey, 0 3px 0 grey, 
+  0 4px 0 grey, 0 5px 0 grey, 0 6px 0 grey, 0 7px 0 grey, 
+  0 8px 0 grey, 0 9px 0 grey, 0 50px 25px rgb(0, 0, 0, 0.2);
+  }
+}
+#index-title h2 span:nth-child(2){
+  animation-delay: 0.1s;
+}
+#index-title h2 span:nth-child(3){
+  animation-delay: 0.2s;
+}
+#index-title h2 span:nth-child(4){
+  animation-delay: 0.3s;
+}
+#index-title h2 span:nth-child(5){
+  animation-delay: 0.4s;
+}
+#index-title h2 span:nth-child(6){
+  animation-delay: 0.5s;
+} 
+#index-title h2 span:nth-child(7){
+  animation-delay: 0.6s;
+}
+#index-title h2 span:nth-child(8){
+  animation-delay: 0.7s;
+}
+
+/*CSS resume page - fixed*/
+#resume-border{
+  background-color: lightgray;
+  border: 0.25em black;
+  border-style: dashed;
+  padding: 1em;
+  width: 1320px;
+  margin: auto;
+}
+
+#resume-header{
+  display: inline-block;
+  margin: 1rem;
+  padding: 1rem 1rem;
+  position: relative;
+  vertical-align: top;
+}
+
+#education{
+  display: inline-block;
+  position: relative;
+  padding: 1rem 1rem;
+  width: 25%;
+  text-align: left;
+  vertical-align: top;
+}
+
+#education h2{
+  font-weight: bold;
+  font-size: 1.4em;
+  border-bottom: .2rem solid black;
+}
+
+#education h3{
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+#technical{
+  display: inline-block;
+  position: relative;
+  padding: 1rem 1rem;
+  width: 25%;
+  text-align: left;
+  vertical-align: top;
+}
+
+#technical h2{
+  font-weight: bold;
+  font-size: 1.4em;
+  border-bottom: 0.2rem solid black;
+}
+
+#technical ul{
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  -webkit-column-gap: 1.25rem;
+  -moz-column-gap: 1.25rem;
+  column-gap: 1.25rem
+}
+
+#work-experience{
+  display: inline-block;
+  position: relative;
+  padding: 1rem 1rem;
+  width: 25%;
+  text-align: left;
+  vertical-align: top;
+}
+
+#work-experience h2{
+  font-weight: bold;
+  font-size: 1.4em;
+  border-bottom: 0.2rem solid black;
+}
+
+#work-experience h3{
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+/*CSS schedule page*/
+#schedule-header-background{
+  border: solid 0.5rem maroon;
+  margin: 0.1em;
+  transition: clip-path 0.6s linear;
+  clip-path: polygon(
+    calc(0% + 5px) calc(0% + 5px), 
+    calc(100% - 5px) calc(0% + 5px), 
+    calc(100% - 5px) calc(100% - 5px), 
+    calc(0% + 5px) calc(100% - 5px)
+  );
+}
+
+#schedule-header-background:hover {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+#schedule-header{
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  padding: 1rem 1rem;
+}
+#schedule-header h2{
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2em;
+}
+
+#table-format-fall{
+  display: inline-block;
+  position: relative;
+  padding: 2em 2em;
+  vertical-align: top;
+}
+#table-format-fall h3{
+  text-align: center;
+  padding: 1rem 1rem;
+  background-color: blueviolet;
+}
+
+#table-format-fall td{
+  font-size: 1em;
+  padding: 0.25rem;
+  border: 0.1rem solid black;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+}
+
+#table-format-spring{
+  display: inline-block;
+  position: relative;
+  padding: 2em 2em;
+  vertical-align: top;
+}
+#table-format-spring h3{
+  text-align: center;
+  padding: 1rem 1rem;
+  background-color: blueviolet;
+}
+
+#table-format-spring td{
+  font-size: 1em;
+  padding: 0.25rem;
+  border: 0.1rem solid black;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+}
+
+.rainbow-color{
+  background-image: linear-gradient(to left, violet, indigo, blue,
+   green, yellow, orange, red);
+  border: 0.1rem solid black;
+}
+
+.light-purple{
+  background-color:plum
+}
+.purple{
+  background-color:purple
+}
+
+/*CSS for Hobbies*/
+#hobbies-wrapper{
+  margin: 1.5em 1.5em;
+  padding: 1.25em 1.25em;
+  background-color: mediumaquamarine;
+  border-radius: 2.5rem;
+  border-style: groove;
+  border-color:royalblue;
+  position: absolute;
+  display: inline-block;
+}
+
+#hobbies-wrapper h2{
+  text-align: center;
+  border-bottom: 0.15rem solid black;
+  margin: 0.25rem;
+  font-weight: bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#hobbies-wrapper p{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#hobbies-lacrosse{
+  margin: none;
+  width: 30%;
+  padding: 1rem 1rem;
+  background-color:lightseagreen;
+  border-radius: 2.5rem;
+  border-style: groove;
+  border-color: royalblue;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+}
+
+#hobbies-biking{
+  width: 30%;
+  padding: 1rem 1rem;
+  background-color: lightseagreen;
+  border-radius: 2.5rem;
+  border-style: groove;
+  border-color: royalblue;
+  display: inline-block;
+  vertical-align: top;
+}
+
+#hobbies-gaming{
+  margin: none;
+  width: 30%;
+  position: relative;
+  padding: 1rem 1rem;
+  background-color: lightseagreen;
+  border-radius: 2.5rem;
+  border-style: groove;
+  border-color: royalblue;
+  display: inline-block;
+  vertical-align: middle;
+}
