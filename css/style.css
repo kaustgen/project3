@@ -374,3 +374,9 @@ img:hover{
   display: inline-block;
   vertical-align: middle;
 }
+
+/*CSS for Map*/
+#map {
+  height: 100%;
+  width: 100%;
+}
