@@ -402,6 +402,7 @@ img:hover{
 .slideshowContainer 
 {
   min-width: 200px;
+  min-height: 200px;
   position: relative;
   margin: auto;
 } 
