@@ -11,6 +11,9 @@ function initMap() {
   let marker = new google.maps.Marker({
     position: garden,
     map: map,
+    icon: {
+      url: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png"
+    },
     title: 'Garden of the Gods'
   });
 }
